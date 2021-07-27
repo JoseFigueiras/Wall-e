@@ -1,0 +1,2 @@
+Requires g++ to compile
+Requires valgrind to check for leaks
