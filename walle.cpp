@@ -49,6 +49,13 @@ class Grid
 			currentYPos = 0 + abs(minYPos);
 			map[currentXPos][currentYPos] = EMPTY;	// clear starting position
 		}
+
+		~Grid()
+		{
+			for (int x = 0; x < xSize; x++)
+				delete[] map[x];
+			delete[] map;
+		}
 		
 		bool	doesCurrentTileHaveTrash()
 		{
@@ -96,6 +103,6 @@ int	main()
 		}
 	}
 	cout << totalTrash << endl;
-	// TODO: clean up memory
+	delete grid;
 	return (0);
 }
