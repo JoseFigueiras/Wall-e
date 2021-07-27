@@ -75,23 +75,6 @@ class Grid
 			else if (direction == WEST)
 				currentYPos--;
 		}
-
-		void	printMap()
-		{
-			for (int x = 0; x < xSize; x++)
-			{
-				for (int y = 0; y < ySize; y++)
-				{
-					if (currentXPos == x && currentYPos == y)
-						cout << "[x]";
-					else if (map[x][y] == FULL)
-						cout << "[O]";
-					else
-						cout << "[ ]";
-				}
-				cout << endl;
-			}
-		}
 };
 
 int	main()
