@@ -1,2 +1,6 @@
 Requires g++ to compile
 Requires valgrind to check for leaks
+
+Usage:
+sh run.sh		- runs the program (requires user input)
+sh test.sh		- runs the program with test values. requires user input for a memory leak test
