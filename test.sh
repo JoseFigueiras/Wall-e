@@ -44,3 +44,5 @@ echo
 
 echo "Test for memory leaks (requires user input): "
 valgrind --leak-check=yes ./output
+
+rm output
